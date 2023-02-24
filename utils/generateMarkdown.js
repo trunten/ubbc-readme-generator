@@ -13,7 +13,7 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [Contributions](#contributions)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
@@ -28,16 +28,18 @@ ${usage}
 ## Credits
 Give props here
 
-## Contributions
-${contribution ? contribution + "\n" : ""}
-Contact me for additional contributing info:
+## Contributing
+${contribution}
+
+##Questions
+Contact me for any questions you may have:
 - Github: [${github}](https://github.com/${github})
 - Email: ${email}
 
 `;
 
   if (license && license.toLowerCase() !== "none") {
-    md += `## License\n${getLicense(license)}\n\nRefer to the [license](LICENSE) in the repo`;
+    md += `## License\n${getLicense(license)}\n\nRefer to the [license (${license})](LICENSE) in the repo`;
   }
 
   return md;

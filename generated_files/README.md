@@ -9,7 +9,7 @@ test
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [Contributions](#contributions)
+- [Contributions](#contributing)
 - [License](#license)
 
 ## Installation
@@ -24,7 +24,7 @@ node index.js
 ## Credits
 
 
-## Contributions
+## Contributing
 Contact me for contributing details:
 - Github: [a](https://github.com/a)
 - Email: aaa@b.com

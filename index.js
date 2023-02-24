@@ -1,6 +1,6 @@
-import inquirer from "inquirer";
 import { join } from 'path';
 import { writeFile } from "fs";
+import inquirer from "inquirer";
 import generateMarkdown from "./utils/generateMarkdown.js";
 import questions from "./utils/questions.js";
 

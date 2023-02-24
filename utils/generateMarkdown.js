@@ -29,7 +29,8 @@ ${usage}
 Give props here
 
 ## Contributions
-Contact me for contributing details:
+${contribution ? contribution + "\n" : ""}
+Contact me for additional contributing info:
 - Github: [${github}](https://github.com/${github})
 - Email: ${email}
 

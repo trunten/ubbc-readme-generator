@@ -1,8 +1,7 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  console.log(data);
-  const { title, description, installation, usage, credits, github, email, license} = data;
-  const md = 
+export default function generateMarkdown(data) {
+  const { title, description, installation, tests, usage, credits, github, email, license} = data;
+  let md = 
 `# ${title}
 
 ## Description
@@ -16,7 +15,10 @@ ${description}
 - [License](#license)
 
 ## Installation
-${installation}
+\`\`\`${installation}\`\`\`
+
+## Tests
+\`\`\`${tests}\`\`\`
 
 ## Usage
 ${usage}
@@ -28,11 +30,13 @@ ${credits}
 Contact me for contributing details:
 - Github: [${github}](https://github.com/${github})
 - Email: ${email}
+`;
 
-## License
-${getLicense(license)}
-`
-    return md;
+  if (license && license.toLowerCase() !== "none") {
+    md += `## License\n${getLicense(license)}`;
+  }
+
+  return md;
 }
 
 function getLicense(license) {
@@ -50,5 +54,3 @@ function getLicense(license) {
           return `[![license](https://img.shields.io/badge/License-${license?.replaceAll(" ","%20")}-green.svg)](LICENSE)`;
   }
 }
-
-module.exports = generateMarkdown;

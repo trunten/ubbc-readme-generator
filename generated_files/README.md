@@ -1,7 +1,7 @@
-# testing
+# test
 
 ## Description
-just a test
+test
 
 ## Table of contents
 - [Installation](#installation)
@@ -13,8 +13,11 @@ just a test
 ## Installation
 ```npm i```
 
+## Tests
+```npm test```
+
 ## Usage
-```node index.js``` and follow the on screen prompts
+node index.js
 
 ## Credits
 me
@@ -23,6 +26,5 @@ me
 Contact me for contributing details:
 - Github: [trunten](https://github.com/trunten)
 - Email: a@b.com
-
 ## License
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit-0/)
+[![license](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/license/apache-2-0/)

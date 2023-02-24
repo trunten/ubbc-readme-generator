@@ -1,8 +1,10 @@
 // function to generate markdown for README
 export default function generateMarkdown(data) {
-  const { title, description, installation, tests, usage, credits, github, email, license} = data;
+  const { title, description, installation, tests, usage, contribution, github, email, license} = data;
   let md = 
 `# ${title}
+
+${getLicense(license)}
 
 ## Description
 ${description}
@@ -24,16 +26,17 @@ ${description}
 ${usage}
 
 ## Credits
-${credits}
+Give props here
 
 ## Contributions
 Contact me for contributing details:
 - Github: [${github}](https://github.com/${github})
 - Email: ${email}
+
 `;
 
   if (license && license.toLowerCase() !== "none") {
-    md += `## License\n${getLicense(license)}`;
+    md += `## License\n${getLicense(license)}\n\nRefer to the [license](LICENSE) in the repo`;
   }
 
   return md;
@@ -48,7 +51,7 @@ function getLicense(license) {
           return "[![license](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/license/apache-2-0/)";
 
       case "none":
-          return "NONE"
+          return ""
 
       default:
           return `[![license](https://img.shields.io/badge/License-${license?.replaceAll(" ","%20")}-green.svg)](LICENSE)`;

@@ -1,5 +1,7 @@
 # test
 
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit-0/)
+
 ## Description
 test
 
@@ -20,11 +22,14 @@ test
 node index.js
 
 ## Credits
-me
+
 
 ## Contributions
 Contact me for contributing details:
-- Github: [trunten](https://github.com/trunten)
-- Email: a@b.com
+- Github: [a](https://github.com/a)
+- Email: aaa@b.com
+
 ## License
-[![license](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/license/apache-2-0/)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit-0/)
+
+Refer to the [license](LICENSE) in the repo

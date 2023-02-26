@@ -73,7 +73,7 @@ function getLicense(licenseName) {
             license = { name: licenseName, short_code: licenseName, url: "LICENSE", color: "red" };
         }
         license.mdBadge = `[![License Badge](https://img.shields.io/badge/License-${license.short_code}-${license.color}.svg)](${license.url})`;
-        license.mdLink = `[${license.name}](${license.url})`;
+        license.mdLink = `Refer to the license [(${license.name})](${license.url}) in the repo`;
         return license;
     }
 }

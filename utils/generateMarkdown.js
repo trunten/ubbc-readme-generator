@@ -45,7 +45,7 @@ Contact me for any questions you may have:
 `;
 
   if (licenseName.toLowerCase() !== "none") {
-    md += `## License\n${license.mdBadge}\n\nRefer to the license [(${license.name})](${license.url}) in the repo`;
+    md += `## License\n${license.mdBadge}\n\n${license.mdLink}`;
   }
 
   return md;

@@ -1,68 +1,76 @@
+import { licenseNames } from './licenses.js';
+
 // array of questions for user
 const questions = [
     {
-        type:"input",
-        message:"github name?", 
-        name:"github",
-        validate: answer => answer === "" ? "github username can't be blank" : true,
+        type: "input",
+        message: "What is your GitHub username?", 
+        name: "github",
+        validate: answer => answer.trim() === "" ? "GitHub username can't be blank" : true,
     },
     {
-        type:"input",
-        message:"email?", 
-        name:"email",
+        type: "input",
+        message: "What is your email address?", 
+        name: "email",
         validate: answer => {
             const re = /^[\w!#$%&'*+/=?`{|}~^-]+(?:\.[\w!#$%&'*+/=?`{|}~^-]+)*@(?:[A-Z0-9-]+\.)+[A-Z]{2,6}$/i;
             if (!re.test(answer)) {
-                return "That email looks a bit fishy";
+                return "Please enter a valid email address";
             }
             return true;
         },
     },
     {
-        type:"input",
-        message:"project name?", 
-        name:"title",
-        validate: answer => answer === "" ? "Going to need an answer pal" : true,
+        type: "input",
+        message: "What is your projects name?", 
+        name: "title",
+        validate: answer => answer.trim() === "" ? "Project name cannot be blank" : true,
     },
     {
-        type:"input",
-        message:"project description?", 
-        name:"description",
-        validate: answer => answer === "" ? "Short can be sweet, but blank isn't going to cut it" : true,
+        type: "input",
+        message: "Please write a short description of your project:", 
+        name: "description",
+        validate: answer => answer.trim() === "" ? "Project description cannot be empty." : true,
     },
     {
-        type:"list",
-        message:"license?", 
-        choices: ["MIT", "Apache", "None"],
-        name:"license",
-        validate: answer => answer === "" ? "All your own work? WOW! Type N/A though if it's not required" : true,
+        type: "list",
+        message: "What kind of license should your project have?", 
+        choices: licenseNames,
+        pageSize: 10,
+        loop: false,
+        name: "licenseName",
     },
     {
-        type:"input",
-        message:"installation?", 
-        name:"installation",
+        type: "input",
+        message: "Please enter the name/SPDX ID of the license attached to your project:", 
+        name: "licenseOther",
+        when: answers => answers.licenseName === "Other",
+        validate: answer => answer.trim() === "" ? "License cannot be blank" : true,
+    },
+    {
+        type: "input",
+        message: "What command should be run to install dependencies?", 
+        name: "installation",
         default: "npm i",
-        validate: answer => answer === "" ? "Type N/A if not required" : true,
+        validate: answer => answer.trim() === "" ? "Type N/A if not required" : true,
     },
     {
-        type:"input",
-        message:"tests?", 
-        name:"tests",
+        type: "input",
+        message: "What command should be run to run tests?", 
+        name: "tests",
         default: "npm test",
-        validate: answer => answer === "" ? "No tests? Sloppy. You're going to have to have something here" : true,
     },
     {
-        type:"input",
-        message:"usage?", 
-        name:"usage",
+        type: "input",
+        message: "What does the user need to know about using the repo?", 
+        name: "usage",
         default: "node index.js",
-        validate: answer => answer === "" ? "Your users are going to need a bit of help. Don't be mean" : true,
+        validate: answer => answer.trim() === "" ? "Usage section cannot be blank" : true,
     },
     {
-        type:"input",
-        message:"contributions?", 
-        name:"contribution",
-        validate: answer => answer === "" ? "All your own work? WOW! Type N/A though if it's not required" : true,
+        type: "input",
+        message: "What does the user need to know about contributing to the repo?", 
+        name: "contribution",
     },
 ];
 

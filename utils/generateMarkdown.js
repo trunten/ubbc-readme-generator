@@ -1,62 +1,52 @@
+import { getLicense } from './licenses.js';
+
 // function to generate markdown for README
 export default function generateMarkdown(data) {
-  const { title, description, installation, tests, usage, contribution, github, email, license} = data;
+  const { github, email, title, description, licenseName, installation, tests, usage, contribution} = data;
+  const license = getLicense(licenseName === "Other" ? data.licenseOther : licenseName);
+
   let md = 
 `# ${title}
 
-${getLicense(license)}
+${license.mdBadge || ""}
 
 ## Description
 ${description}
 
 ## Table of contents
-- [Installation](#installation)
+- [Installation](#installation)${tests !== "" ? "\n- [Tests](#tests)" : ""}
 - [Usage](#usage)
 - [Credits](#credits)
-- [Contributing](#contributing)
-- [License](#license)
+${contribution !== "" ? "- [Contributing](#contributing)\n" : ""}${license.name ? "- [License](#license)" : ""}
 
 ## Installation
 \`\`\`${installation}\`\`\`
 
-## Tests
-\`\`\`${tests}\`\`\`
+${tests !== "" ? `## Tests
+\`\`\`${tests}\`\`\``: ""}
 
 ## Usage
 ${usage}
 
 ## Credits
-Give props here
+List your collaborators, if any, with links to their GitHub profiles.
 
-## Contributing
-${contribution}
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
-##Questions
+If you followed tutorials, include links to those here as well.
+
+${contribution !== "" ? "## Contributing\n" + contribution : ""}
+
+## Questions
 Contact me for any questions you may have:
 - Github: [${github}](https://github.com/${github})
 - Email: ${email}
 
 `;
 
-  if (license && license.toLowerCase() !== "none") {
-    md += `## License\n${getLicense(license)}\n\nRefer to the [license (${license})](LICENSE) in the repo`;
+  if (licenseName.toLowerCase() !== "none") {
+    md += `## License\n${license.mdBadge}\n\nRefer to the license [(${license.name})](${license.url}) in the repo`;
   }
 
   return md;
-}
-
-function getLicense(license) {
-  switch (license?.toLowerCase()) {
-      case "mit":
-          return "[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit-0/)";
-
-      case "apache":
-          return "[![license](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/license/apache-2-0/)";
-
-      case "none":
-          return ""
-
-      default:
-          return `[![license](https://img.shields.io/badge/License-${license?.replaceAll(" ","%20")}-green.svg)](LICENSE)`;
-  }
 }

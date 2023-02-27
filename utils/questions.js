@@ -64,7 +64,6 @@ const questions = [
         type: "input",
         message: "What does the user need to know about using the repo?", 
         name: "usage",
-        default: "node index.js",
         validate: answer => answer.trim() === "" ? "Usage section cannot be blank" : true,
     },
     {

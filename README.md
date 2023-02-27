@@ -26,7 +26,6 @@ A command line utility that produces a professional, high quality README file fr
 
 ## Table of contents
 - [Installation](#installation)
-- [Tests](#tests)
 - [Usage](#usage)
 - [Credits](#credits)
 - [Contributing](#contributing)
@@ -36,10 +35,6 @@ A command line utility that produces a professional, high quality README file fr
 - Open your terminal and navigate to the aplication's containing folder
 - Type the following command into your terminal to install application dependancies:
  ```npm i```
-
-## Tests
-- Type the following command into your terminal to run the application tests:
-```npm test```
 
 ## Usage
 - Install project dependancies using the command detailed in the [installation](#installation) section

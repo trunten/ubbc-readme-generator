@@ -14,16 +14,20 @@ Brief project description
 - [License](#license)
 
 ## Installation
-```Add your installation steps here```
-
-## Tests
-```Add the steps for running tests here```
+```
+Add your installation steps here
+```
 
 ## Usage
 Explain how to use the application here
 
 ## Contributing
 Here you can explain how people can contribute and detail contribution guidelines
+
+## Tests
+```
+Add the steps for running tests here
+```
 
 ## Questions
 - Github Profile: [Enter Your GitHub Username Here](https://github.com/Enter%20Your%20GitHub%20Username%20Here)
@@ -32,6 +36,6 @@ Here you can explain how people can contribute and detail contribution guideline
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-This project is licensed under the [(MIT License)](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
 Refer to the [license](LICENSE) in the repo

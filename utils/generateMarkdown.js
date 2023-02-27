@@ -4,6 +4,12 @@ import { getLicense } from './licenses.js';
 export default function generateMarkdown(data) {
   const { github, email, title, description, licenseName, installation, tests, usage, contribution} = data;
   const license = getLicense(licenseName === "Other" ? data.licenseOther : licenseName);
+  let toc = `## Table of contents
+  - [Installation](#installation)
+  - [Usage](#usage)`;
+  if (contribution !== "") { toc += "\n- [Contributing](#contributing)" }
+  if (tests !== "") { toc += "\n- [Tests](#tests)" }
+  if (license.name) { toc += "\n- [License](#license)" }
 
   let md = 
 `# ${title}
@@ -13,22 +19,22 @@ ${license.mdBadge || ""}
 ## Description
 ${description}
 
-## Table of contents
-- [Installation](#installation)${tests !== "" ? "\n- [Tests](#tests)" : ""}
-- [Usage](#usage)
-- [Credits](#credits)
-${contribution !== "" ? "- [Contributing](#contributing)\n" : ""}${license.name ? "- [License](#license)" : ""}
+${toc}
 
 ## Installation
-\`\`\`${installation}\`\`\`
-
-${tests !== "" ? `## Tests
-\`\`\`${tests}\`\`\``: ""}
+\`\`\`
+${installation}
+\`\`\`
 
 ## Usage
 ${usage}
 
 ${contribution !== "" ? "## Contributing\n" + contribution : ""}
+
+${tests !== "" ? `## Tests
+\`\`\`
+${tests}
+\`\`\``: ""}
 
 ## Questions
 - Github Profile: [${github}](https://github.com/${github.replaceAll(" ", "%20")})

@@ -47,6 +47,8 @@ A command line utility that produces a professional, high quality README file fr
 - Markdown mailto links: https://www.w3schools.io/file/markdown-links
 
 ## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 This repo adopts the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) for contributing guidlines.
 
 ## Questions

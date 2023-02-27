@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>README Generator</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            place-content: center;
+            min-height: 99vh;
+            color: white;
+            background: black;
+            position: relative;
+        }
+
+        h1 {
+            font-size: clamp(24px, 8vw, 35px);
+        }
+
+        main {
+            text-align: center;
+        }
+
+        main p {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(255, 189, 67);
+            font-size: clamp(16px, 5vw, 20px);
+        }
+
+        main a {
+            display: inline-block;
+            margin-block: 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 100vmax;
+            color: white;
+            transition: all 300ms linear;
+        }
+
+        main a:hover { 
+            background-color: white;
+            color: black;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            color: khaki;
+            letter-spacing: 0.5px;
+        }
+
+        code {
+            display: block;
+            margin: 30px auto;
+            width: 250px;
+            max-width: 90%;
+            padding: 20px;
+            text-align: start;
+            border: 1px dashed gray;
+            font-size: 18px;
+            background-color: rgb(24, 24, 24);       
+        }
+
+        footer {
+            font-size: 14px;
+            position: absolute;
+            bottom: -10px;
+        }
+
+        footer a {
+            color: rgb(189, 189, 189);
+        }
+
+        footer a:hover {
+            color: rgb(31, 128, 255);
+        }
+
+        .blink {
+            animation: blinking 1.5s steps(2) infinite;
+            display: inline-block;
+            background-color: white;
+        }
+
+        @keyframes blinking {
+            0% { opacity: 0; }
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>README Markdown Generator</h1>
+        <p>Generate a quality README for your project in seconds</p>
+        <a href="https://github.com/trunten/ubbc-readme-generator/archive/refs/heads/main.zip">Download <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+        <code>
+            <h2>Installation:</h2>
+            npm install
+        </code>
+        <code>
+            <h2>Run:</h2>
+            node index.js<span class="blink">&nbsp;</span>
+        </code>
+    </main>
+
+    <footer>
+        <p>Created by <a href="https://github.com/trunten">Jonathan</a></p>
+    </footer>    
+  </body>
+</html>

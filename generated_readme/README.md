@@ -14,7 +14,7 @@ Brief project description
 - [License](#license)
 
 ## Installation
-```Add your installation step here```
+```Add your installation steps here```
 
 ## Tests
 ```Add the steps for running tests here```
@@ -33,8 +33,8 @@ If you followed tutorials, include links to those here as well.
 Here you can explain how people can contribute and detail contribution guidelines
 
 ## Questions
-- Github Profile: [Enter Your GitHub Username Here](https://github.com/Enter Your GitHub Username Here)
-- Contact me for any questions you may have via email at User@domain-name.tld
+- Github Profile: [Enter Your GitHub Username Here](https://github.com/Enter%20Your%20GitHub%20Username%20Here)
+- Contact me for any questions you may have via email at [user@domain-name.tld](mailto:user@domain-name.tld)
 
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)

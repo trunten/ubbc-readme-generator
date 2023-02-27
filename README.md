@@ -21,22 +21,21 @@ A command line utility that produces a professional, high quality README file fr
 ```npm test```
 
 ## Usage
-node index.js
+- Install project dependancies using the command detailed in the [installation](#installation) section
+- Run the application by typing <code>node index.js</code> into your terminal
+- Answer the questions presented by typing your response in the terminal
+-Your <code>README.md</code> file will be output to the sub-folder <code>generated_readme</code> 
 ![image](./assets/images/app-screenshot.png)
 
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+- Markdown mailto links: https://www.w3schools.io/file/markdown-links
 
 ## Contributing
 This repo adopts the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) for contributing guidlines.
 
 ## Questions
 - Github Profile: [trunten](https://github.com/trunten)
-- Contact me for any questions you may have via email at trunten@btinternet.com
+- Contact me for any questions you may have via email at [trunten@btinternet.com](mailto:trunten@btinternet.com)
 
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)

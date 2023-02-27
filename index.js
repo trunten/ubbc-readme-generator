@@ -13,7 +13,7 @@ function writeToFile(fileName, data) {
         return;
     }
 
-    writeFile(join("generated_readme", fileName), generateMarkdown(data), (err) => err ? console.error(err) : console.log('Success!'));
+    writeFile(join("generated_readme", fileName), generateMarkdown(data), (err) => err ? console.error(err) : console.log('Success! Your README.md file has been saved to the "generated_readme" sub-directory'));
 }
 
 // function to initialize program

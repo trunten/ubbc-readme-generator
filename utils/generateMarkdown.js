@@ -38,8 +38,8 @@ If you followed tutorials, include links to those here as well.
 ${contribution !== "" ? "## Contributing\n" + contribution : ""}
 
 ## Questions
-- Github Profile: [${github}](https://github.com/${github})
-- Contact me for any questions you may have via email at ${email}
+- Github Profile: [${github}](https://github.com/${github.replaceAll(" ", "%20")})
+- Contact me for any questions you may have via email at [${email}](mailto:${email.replaceAll(" ", "%20")})
 
 `;
 

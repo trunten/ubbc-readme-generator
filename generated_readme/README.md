@@ -22,19 +22,12 @@ Brief project description
 ## Usage
 Explain how to use the application here
 
-## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
 ## Contributing
 Here you can explain how people can contribute and detail contribution guidelines
 
 ## Questions
 - Github Profile: [Enter Your GitHub Username Here](https://github.com/Enter%20Your%20GitHub%20Username%20Here)
-- Contact me for any questions you may have via email at [user@domain-name.tld](mailto:user@domain-name.tld)
+- Contact me with any questions you may have via email at [user@domain-name.tld](mailto:user@domain-name.tld)
 
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)

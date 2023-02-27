@@ -5,8 +5,8 @@ export default function generateMarkdown(data) {
   const { github, email, title, description, licenseName, installation, tests, usage, contribution} = data;
   const license = getLicense(licenseName === "Other" ? data.licenseOther : licenseName);
   let toc = `## Table of contents
-  - [Installation](#installation)
-  - [Usage](#usage)`;
+- [Installation](#installation)
+- [Usage](#usage)`;
   if (contribution !== "") { toc += "\n- [Contributing](#contributing)" }
   if (tests !== "") { toc += "\n- [Tests](#tests)" }
   if (license.name) { toc += "\n- [License](#license)" }

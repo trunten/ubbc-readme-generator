@@ -1,9 +1,9 @@
-# README Generator
+# Your Project title
 
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Description
-A command line utility that produces a professional, high quality README file from the answers to a series of user input prompts.
+Brief project description
 
 ## Table of contents
 - [Installation](#installation)
@@ -14,13 +14,13 @@ A command line utility that produces a professional, high quality README file fr
 - [License](#license)
 
 ## Installation
-```npm i```
+```Add your installation step here```
 
 ## Tests
-```npm test```
+```Add the steps for running tests here```
 
 ## Usage
-node index.js
+Explain how to use the application here
 
 ## Credits
 List your collaborators, if any, with links to their GitHub profiles.
@@ -30,14 +30,15 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 
 ## Contributing
-This repo adopts the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) for contributing guidlines.
+Here you can explain how people can contribute and detail contribution guidelines
 
 ## Questions
-Contact me for any questions you may have:
-- Github: [trunten](https://github.com/trunten)
-- Email: trunen@btinternet.com
+- Github Profile: [Enter Your GitHub Username Here](https://github.com/Enter Your GitHub Username Here)
+- Contact me for any questions you may have via email at User@domain-name.tld
 
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Refer to the license [(MIT License)](/LICENSE) in the repo
+This project is licensed under the [(MIT License)](https://choosealicense.com/licenses/mit/)
+
+Refer to the [license](LICENSE) in the repo

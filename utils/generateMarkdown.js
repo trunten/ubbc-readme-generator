@@ -38,9 +38,8 @@ If you followed tutorials, include links to those here as well.
 ${contribution !== "" ? "## Contributing\n" + contribution : ""}
 
 ## Questions
-Contact me for any questions you may have:
-- Github: [${github}](https://github.com/${github})
-- Email: ${email}
+- Github Profile: [${github}](https://github.com/${github})
+- Contact me for any questions you may have via email at ${email}
 
 `;
 

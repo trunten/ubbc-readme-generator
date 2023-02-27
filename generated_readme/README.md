@@ -40,4 +40,4 @@ Contact me for any questions you may have:
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Refer to the license [(MIT License)](https://choosealicense.com/licenses/mit/) in the repo
+Refer to the license [(MIT License)](/LICENSE) in the repo

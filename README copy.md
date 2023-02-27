@@ -35,11 +35,12 @@ If you followed tutorials, include links to those here as well.
 This repo adopts the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) for contributing guidlines.
 
 ## Questions
-Contact me for any questions you may have:
-- Github: [trunten](https://github.com/trunten)
-- Email: trunen@btinternet.com
+- Github Profile: [trunten](https://github.com/trunten)
+- Contact me for any questions you may have via email at trunten@btinternet.com
 
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Refer to the license [(MIT License)](https://choosealicense.com/licenses/mit/) in the repo
+This project is licensed under the [(MIT License)](https://choosealicense.com/licenses/mit/) 
+
+Refer to the license in the repo

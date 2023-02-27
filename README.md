@@ -40,6 +40,6 @@ This repo adopts the [Contributor Covenant](https://www.contributor-covenant.org
 ## License
 [![License Badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-This project is licensed under the [(MIT License)](https://choosealicense.com/licenses/mit/) 
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
-Refer to the license in the repo
+Refer to the [license](LICENSE) in the repo

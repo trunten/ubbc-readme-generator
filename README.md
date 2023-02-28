@@ -41,7 +41,7 @@ A command line utility that produces a professional, high quality README file fr
 - Install project dependancies using the command detailed in the [installation](#installation) section
 - Run the application by typing <code>node index.js</code> into your terminal
 - Answer the questions presented by typing your response in the terminal
--Your <code>README.md</code> file will be output to the sub-folder <code>generated_readme</code> 
+-Your <code>README.md</code> file will be output to the sub-folder <code>generated_readme</code> [(Example output)](./generated_readme/README.md)
 ![image](./assets/images/app-screenshot.png)
 
 ## Credits

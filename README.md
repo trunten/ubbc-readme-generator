@@ -30,6 +30,7 @@ A command line utility that produces a professional, high quality README file fr
 - [Credits](#credits)
 - [Contributing](#contributing)
 - [License](#license)
+- [Video Guide](#video)
 
 ## Installation
 - Open your terminal and navigate to the aplication's containing folder
@@ -61,3 +62,10 @@ This repo adopts the [Contributor Covenant](https://www.contributor-covenant.org
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
 Refer to the [license](LICENSE) in the repo
+
+## Video
+[[ Download Full quality video (98mb) ]](./assets/videos/Video%20Guide.mp4?raw=true)
+
+https://user-images.githubusercontent.com/4108334/221923557-f3941550-e925-48fc-a1a2-dd24989387bb.mp4
+
+

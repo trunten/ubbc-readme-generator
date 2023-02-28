@@ -67,5 +67,3 @@ Refer to the [license](LICENSE) in the repo
 [[ Download Full quality video (98mb) ]](./assets/videos/Video%20Guide.mp4?raw=true)
 
 https://user-images.githubusercontent.com/4108334/221923557-f3941550-e925-48fc-a1a2-dd24989387bb.mp4
-
-

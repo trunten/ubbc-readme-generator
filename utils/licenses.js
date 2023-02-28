@@ -70,7 +70,7 @@ function getLicense(licenseName) {
             if (item.name === licenseName) license = item;
         });
         if (!license) { 
-            license = { name: licenseName, short_code: licenseName, url: "LICENSE", color: "red" };
+            license = { name: licenseName, short_code: licenseName.replaceAll(" ","_"), url: "LICENSE", color: "red" };
         }
         license.mdBadge = `[![License Badge](https://img.shields.io/badge/License-${license.short_code}-${license.color}.svg)](${license.url})`;
         license.mdLink = `This project is licensed under ${license.name.toLowerCase().substring(0,3) !== "the" ? "the" : ""} [${license.name}](${license.url})\n\nRefer to the [license](LICENSE) in the repo`;
